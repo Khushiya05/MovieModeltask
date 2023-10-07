@@ -4,8 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel=" stylesheet " href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css " integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm " crossorigin="anonymous ">
-    <link rel="stylesheeet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
 
     <title>Movie Model</title>
 </head>
@@ -28,8 +31,47 @@
         <div class="row ">
         </div>
     </div>
+
     <div class="backDrop" id="backDrop"></div>
-    <div class="ourModel" id="ourModel"></div>
+    <div class="ourModel" id="ourModel">
+
+        <div class="card">
+            <div class="card-header">
+                <h2 class="m-0">Add Movie Details
+                    <i class="fas fa-times float-right"></i>
+                </h2>
+            </div>
+            <div class="card-body">
+                <form>
+                    <div class="form-group">
+                        <label for="movietitle">Movie Title</label>
+                        <input type="text" name="" id="movietitle" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="movieUrl">Movie Url</label>
+                        <input type="text" name="" id="movieUrl" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="movieRating">Movie Rating</label>
+                        <!-- <input type="number" min="1" max="5" id=" movieRating " class="form-control "> -->
+                        l
+                        <select name="" id="movieRating">
+                            <option value="1">1</option>
+                            <option value="1">2</option>
+                            <option value="1">3</option>
+                            <option value="1">4</option>
+                            <option value="1">5</option>
+                        </select>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-info" type="submit">Add Movie</button>
+                        <button class="btn btn-danger" type="button">Cancle</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
     <script src="./assets/js/app.js "></script>
 </body>
 
